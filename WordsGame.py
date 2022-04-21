@@ -8,7 +8,7 @@ bot = telebot.TeleBot(token, parse_mode=None)
 data = ""
 with open('DictionaryVerified.txt', encoding='utf8') as f:
     for line in f:
-        print(line.strip())
+        #print(line.strip())
         data += line.strip()
 dictionary = json.loads(data)
 print("Datatype after deserialization : " + str(type(data)))
